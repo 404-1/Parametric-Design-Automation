@@ -7,50 +7,6 @@ file = 'Parameters.csv'
 # Read CSV file, assign column title
 Gear = pd.read_csv(file, names=['Name', 'Values', 'Comments'])
 
-'''
-# Drop invalid row
-Gear.drop(index=0, inplace=True)
-
-# Reset row indices
-Gear.reset_index(inplace=True)
-
-# Delete the unused index column
-#Gear.drop(columns='index', inplace=True)
-print(Gear.head())
-
-# Modify/ Use if Gear design has a shaft and/ or key
-'''
-
-'''for row in range(0,5):
-    if row == 3:
-        # Loop to ensure valid input for Shaft
-        while True:
-            Val = input(f'Will there be a shaft (Y or N): ').strip().lower()
-            if Val in ['y','n']:
-                break
-            else:
-                print(f"Invalid input. Please enter Y or N: ")
-        if Val == 'y':
-            Gear.loc[3, 'Values'] = input(f'Input the value of the {Gear.loc[3, 'Comments']},{Gear.loc[3, 'Name']}: ')
-        else:
-            Gear.loc[row, 'Values'] = 0
-            break
-    elif row == 4:
-        # Loop to ensure valid input for key
-        while True:
-            Val = input(f'Will there be a key (Y or N): ').strip().lower()
-            if Val in ['y','n']:
-                break
-            else:
-                print(f"Invalid input. Please enter Y or N: ")
-        if Val == 'y':
-            Gear.loc[4, 'Values'] = input(f'Input the value of the {Gear.loc[4, 'Comments']},{Gear.loc[4, 'Name']}: ')
-        else:
-            Gear.loc[row, 'Values'] = 0
-            break
-    else:
-        Gear.loc[row,'Values'] = input(f'Input the value of the {Gear.loc[row, 'Comments']},{Gear.loc[row, 'Name']}: ')'''
-
 # Gear Parameters
 
 # Input Loop
@@ -79,7 +35,6 @@ for row in Gear.index:
     print(f'{Gear.loc[row, 'Comments']},{Gear.loc[row, 'Name']} = {Gear.loc[row, 'Values']}')
 
 # Write to text file
-# f = input('Input filename: ')
 with open('Data.txt'  'w') as fileID:
     for row in Gear.index:
         # Conditional statement for columns whose values are in degrees (For Solidworks)
