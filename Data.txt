@@ -1,0 +1,13 @@
+"Diametral Pitch,P" = 2.0
+"Number of teeth,N" = 13.0
+"Pressure angle,phi" = 20.0deg
+"Addendum,a" = 0.5
+"Dedendum,b" = 0.625
+"Clearance,c" = 0.125
+"Pitch circle diameter,dp" = 6.5
+"Base circle diameter,db" = 6.108002035108405deg
+"Addendum circle diameter,dca" = 7.5
+"Dedendum circle diameter,dcb" = 5.25
+"alpha,alpha" = 0.8539582918412307deg
+"angle btw buttom of teeth and centerline,inv_angle" = 6.069118631235693deg
+"beta,beta" = 12.138237262471385
