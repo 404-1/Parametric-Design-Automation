@@ -1,0 +1,13 @@
+P,2,Diametral Pitch
+N,18,Number of teeth
+phi,20deg,Pressure angle
+a,1/P,Addendum
+b,1.25/P,Dedendum
+c,b-a,Clearance
+dp,N/P,Pitch circle diameter
+db,dp*cos(phi),Base circle diameter
+dca,dp + 2*a,Addendum circle diameter
+dcb,dp - 2*b,Dedendum circle diameter
+alpha,(sqr(dp^2-db^2)/db)-phi,alpha
+inv_angle,360/4*N - alpha,angle btw buttom of teeth and centerline
+beta,(360/4*N - alpha)*2,beta
