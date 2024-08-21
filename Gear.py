@@ -80,7 +80,7 @@ for row in Gear.index:
 
 # Write to text file
 # f = input('Input filename: ')
-'''with open('Data.txt'  'w') as fileID:
+with open('Data.txt'  'w') as fileID:
     for row in Gear.index:
         # Conditional statement for columns whose values are in degrees (For Solidworks)
         if row in [2, 7, 10, 11]:
@@ -88,4 +88,4 @@ for row in Gear.index:
         else:
             fileID.write(f'"{Gear.loc[row, 'Comments']},{Gear.loc[row, 'Name']}" = {Gear.loc[row, 'Values']}\n')
 
-fileID.close()'''
+fileID.close()
